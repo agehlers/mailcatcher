@@ -1,4 +1,4 @@
 #!/bin/bash
-export HTTP_PORT=1080
-export SMTP_PORT=1025
+export HTTP_PORT=8080
+export SMTP_PORT=8025
 mailcatcher -f --ip=0.0.0.0 --smtp-port=$SMTP_PORT --http-port=$HTTP_PORT
