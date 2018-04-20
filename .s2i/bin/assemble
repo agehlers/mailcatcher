@@ -5,6 +5,8 @@ echo "Before assembling"
 rc=$?
 
 if [ $rc -eq 0 ]; then
+    gem install json
+    gem install puma
     gem install mailcatcher
 else
     echo "After failed assembling"
