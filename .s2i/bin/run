@@ -1,3 +1,4 @@
 #!/bin/bash
-
-# run the application
+export HTTP_PORT=1080
+export SMTP_PORT=1025
+mailcatcher -f --ip=0.0.0.0 --smtp-port=$SMTP_PORT --http-port=$HTTP_PORT
